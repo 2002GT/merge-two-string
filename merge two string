@@ -5,8 +5,11 @@ string merge (string S1, string S2)
     
     string S="";
     int n1=S1.size();
+
     int n2=S2.size();
+
     int i=0,j=0;
+
      for(int k=0; k<n1+n2; k++)
      {  
          if(i<n1)
@@ -18,6 +21,7 @@ string merge (string S1, string S2)
            S+=S2[i];
          }
          i++;
+
          j++;
      }
      return S;
